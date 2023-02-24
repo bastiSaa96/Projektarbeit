@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>HateXAI: Classifier</title>
+        
+        
+        <link rel="stylesheet" href="/index.27d15a9d.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+        <script src="https://kit.fontawesome.com/ef0f5d7f49.js" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.2/d3.min.js" integrity="sha512-oKI0pS1ut+mxQZdqnD3w9fqArLyILRsT3Dx0B+8RVEXzEk3aNK3J3pWlaGJ8MtTs1oiwyXDAH6hG6jy1sY0YqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="/index.c07517c4.js" defer=""></script>
+
+    </head>
+    <body>
+      <!--Header Section-->
+      <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm">
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">HateXAI</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li><a href="#"><i class="fa-regular fa-house"></i> Home</a></li>
+                    <li class="active"><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Classification</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Main Section-->
+      <main>
+        <div class="container">
+            <div class="row row-eq-height" id="content">
+                <div class="col-sm-6" id="input-area" style="padding-top: 2rem; padding-right: 2rem">
+                    <div class="row row-eq-height text-center" id="select-lang">
+                        <div class="col-sm-5">
+                            <h5>Select your language: </h5>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary" id="englishBtn">english</button>
+                                <button type="button" class="btn btn-primary" id="germanBtn">german</button>
+                                
+                                <script>var btns = document.querySelectorAll(".btn-group .btn");
+for(var i = 0; i < btns.length; i++)btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    // Entferne die Klasse 'active' von allen aktiven Buttons
+    for(var j = 0; j < current.length; j++)current[j].className = current[j].className.replace(" active", "");
+    // Füge die Klasse 'active' zu dem geklickten Button hinzu
+    this.className += " active";
+});
+
+</script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-input"></label>
+                        <textarea id="textarea" rows="10" style="width: 100%"> Enter your text here</textarea>
+
+                        <script>document.getElementById("textarea").addEventListener("click", function() {
+    this.value = "";
+});
+
+</script>
+
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </div>
+                <div class="col-sm-6" id="results" style="padding-left: 2rem">
+                    <div class="row" id="title" style="padding-bottom: 1rem">
+                        <div class="col text-center">
+                            <h1>Results</h1>
+                        </div>
+                    </div>
+                    <div class="row row-eq-height" style="padding-left: 1rem">
+                        <div class="col">
+                            <div class="row row-eq-height" id="entered-text" style="border-bottom: 1px solid #d3d3d3">
+                                <div class="col-sm-4 text-center">
+                                    <h4>Entered Text:</h4>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h5>Our great President Trump is an asshole and sucks balls.</h5>
+                                </div>
+                            </div>
+                            <div class="row row-eq-height" id="prediction" style="border-bottom: 1px solid #d3d3d3">
+                                <div class="col-sm-4 text-center">
+                                    <h4>Prediction:</h4>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3>Hate Speech</h3>
+                                </div>
+                            </div>
+                            <div class="row row-eq-height" id="prediction-score">
+                                <div class="col-sm-4 text-center">
+                                    <h4>Prediction Score:</h4>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3>97 %</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row explanation">
+                <h3>Explanation by Shapley Values:</h3>
+                <div class="col" style="margin-top: 5rem">
+                    <div id="chart"></div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <!--Footer Section-->
+      <footer class="bg-light" style="text-align: center; background-color: #f8f8f8; padding: 1rem 2rem">
+        <p style="margin: 0">&copy; 2023 by Sebastian Saal. All rights reserved.</p>
+      </footer>
+    <script src="/classifier.0ed5d9cf.js"></script></body>
+</html>

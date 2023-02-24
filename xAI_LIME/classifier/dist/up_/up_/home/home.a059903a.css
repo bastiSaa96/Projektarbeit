@@ -1,0 +1,29 @@
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: block;
+  overflow: hidden;
+}
+
+.row-eq-height {
+  display: flex;
+}
+
+.row .row-eq-height {
+  align-items: center;
+  padding: 0 1rem;
+  display: flex;
+}
+
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=home.a059903a.css.map */

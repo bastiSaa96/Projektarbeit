@@ -1,0 +1,55 @@
+.row-eq-height {
+  display: flex;
+}
+
+.row .row-eq-height {
+  align-items: center;
+  display: flex;
+}
+
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+.explanation {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  display: flex;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.bar {
+  width: 200px;
+  height: 20px;
+  margin-right: 1px;
+  display: inline-block;
+  position: relative;
+}
+
+.label {
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: bold;
+  top: 5px;
+  left: 0;
+  display: relative !important;
+  color: #000 !important;
+  margin-left: 0 !important;
+}
+
+.group {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 5rem;
+  display: inline;
+}
+
+/*# sourceMappingURL=index.27d15a9d.css.map */

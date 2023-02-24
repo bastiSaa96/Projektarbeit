@@ -1,0 +1,20 @@
+.row-eq-height {
+  display: flex;
+}
+
+.row .row-eq-height {
+  align-items: center;
+  display: flex;
+}
+
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=classifier.27d15a9d.css.map */
