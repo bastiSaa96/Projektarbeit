@@ -6,7 +6,9 @@ async function getData() {
 
 async function createTweetCards() {
   const tweets = await getData();
-  const divContainer = document.getElementById("similar-tweets");
+  const divContainer = document.getElementById("similar-tweets-lime");
+
+  console.log(tweets);
 
   tweets.forEach(tweet => {
     const container = document.createElement("div");

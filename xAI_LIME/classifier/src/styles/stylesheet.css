@@ -15,6 +15,15 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+#explanations {
+    padding-top: 50px;
+}
+
+#explanations h3 {
+    text-align: center;
+}
+
 footer{
     margin-top: auto;
 }

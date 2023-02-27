@@ -13,6 +13,14 @@ body {
   display: flex;
 }
 
+#explanations {
+  padding-top: 50px;
+}
+
+#explanations h3 {
+  text-align: center;
+}
+
 footer {
   margin-top: auto;
 }

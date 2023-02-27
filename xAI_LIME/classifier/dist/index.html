@@ -108,22 +108,23 @@ for(var i = 0; i < btns.length; i++)btns[i].addEventListener("click", function()
                                     <h3>97 %</h3>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col text-center">
-                                    <h3>Explanation by LIME:</h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-10" style="padding: 3rem 1rem">
-                                    <canvas id="lime_chart"></canvas>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row" id="explanations">
+                <div class="col-sm-6" id="simTweets">
+                    <h3>Most similar Tweets from the Dataset:</h3>
+                    <div id="similar-tweets-lime"></div>
+                </div>
+                <div class="col-sm-6" id="chart">
+                    <h3>Explanation by LIME:</h3>
+                    <canvas id="lime_chart" style="padding: 20px 0"></canvas>
+                </div>
+            </div>
         </div>
         <script src="/index.32382936.js" defer=""></script>
+        <script src="/index.ea23c906.js" defer=""></script>
       </main>
       <!--Footer Section-->
       <footer class="bg-light" style="text-align: center; background-color: #f8f8f8; padding: 1rem 2rem">
