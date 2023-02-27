@@ -16,15 +16,25 @@ body{
     flex-direction: column;
 }
 
-.explanation {
+.shapChart, .simTweets {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 50px;
+    text-align: center;
+}
+
+.simTweets h1 {
+  padding-bottom: 50px;
 }
 
 footer{
     margin-top: auto;
+}
+
+#chart {
+  display: flex;
+  justify-content: center;
+
 }
 
 .bar {
@@ -53,4 +63,58 @@ footer{
     display: inline;
     height: fit-content;
     margin-bottom: 5rem;
+  }
+
+  #similar-tweets {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .similar-tweet {
+    width: 500px;
+    height: 300px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+  }
+
+  .similar-tweet__main-content {
+    display: flex;
+    gap: 30px
+  }
+
+  .similar-tweet__main-content > p {
+    max-width: 60%;
+    margin: auto 0;
+  }
+
+  .score {
+    text-align: center;
+  }
+
+  .score h3 {
+    font-size: 18px
+  }
+
+  .score p {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .hatespeech-label, .no-hatespeech-label {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px
+  }
+
+  .hatespeech-label {
+    background-color: rgba(255, 0, 0, 0.7);
+  }
+
+  .no-hatespeech-label {
+    background-color: rgba(70, 130, 180, 0.7);
   }

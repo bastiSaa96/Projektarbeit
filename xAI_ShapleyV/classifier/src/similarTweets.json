@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "text_id": "hasoc_en_219",
+            "text": "Today PM @BorisJohnson is in Northern Ireland with Secretary of State for Northern Ireland @JulianSmithUK. They are meeting each of Northern Irelandâ€™s main political parties for discussions on restoring the devolved institutions.",
+            "task_1": "NOT",
+            "cos_sim": 0.8445,
+            "prediction_score": 0.0356
+        },
+        {
+            "text_id": "hasoc_en1_24",
+            "text": "If Kasab was alive today, even he would have claimed that Tukaram Omble forced him to chant Jai Shri Ram, and voila!",
+            "task_1": "HOF",
+            "cos_sim": 0.5298,
+            "prediction_score": 0.8905
+        }
+    ]
+}

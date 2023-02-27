@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
 
     <title>HateXAI: Home</title>
 
-    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
-        
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ef0f5d7f49.js" crossorigin="anonymous"></script>
+    <link
+      rel="shortcut icon"
+      href="/favicon/favicon.ico"
+      type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous" />
+    <script
+      src="https://kit.fontawesome.com/ef0f5d7f49.js"
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <!--Header Section-->
     <header>
-      <div class= "container-fluid">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-sm">
             <nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="./home.html">HateXAI</a>
+                  <a
+                    class="navbar-brand"
+                    href="./home.html"
+                    >HateXAI</a
+                  >
                 </div>
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="#"><i class="fa-regular fa-house"></i> Home</a></li>
-                  <li><a href="/classifier/src/index.html"><i class="fa-solid fa-magnifying-glass"></i> Classification</a></li>
-                  <li><a href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
-                  <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help</a></li>
+                  <li class="active">
+                    <a href="#"><i class="fa-regular fa-house"></i> Home</a>
+                  </li>
+                  <li>
+                    <a href="../classifier/src/index.html"
+                      ><i class="fa-solid fa-magnifying-glass"></i> Classification</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-circle-info"></i> About</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-circle-question"></i> Help</a>
+                  </li>
                 </ul>
               </div>
             </nav>
@@ -37,72 +64,129 @@
     </header>
     <!--Main Section-->
     <main>
-      <div class="container" id="welcome_text">
+      <div
+        class="container"
+        id="welcome_text">
         <div class="row">
           <div class="col-sm">
             <h1>Welcome to HateXAI</h1>
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <p>This is my research project which I developed in my Masters thesis "Informationelle Selbstbestimmung durch Explainable Artificial Intelligence (XAI) - Entwicklung eines prototypischen Feedbacksystems für die Hate-Speech-Erkennung" at the University of Hildesheim. The source code can be found in my <a href="https://github.com/curious-luke/ma-project.git" target="_blank">Github Repo</a>.</p>
+              <p>
+                This is my research project which I developed in my Masters thesis "Informationelle
+                Selbstbestimmung durch Explainable Artificial Intelligence (XAI) - Entwicklung eines
+                prototypischen Feedbacksystems für die Hate-Speech-Erkennung" at the University of Hildesheim.
+                The source code can be found in my
+                <a
+                  href="https://github.com/curious-luke/ma-project.git"
+                  target="_blank"
+                  >Github Repo</a
+                >.
+              </p>
             </div>
             <div class="col-sm-6">
-              <p>The goal of this project is to explore different methods of the research field Explainable Artificial Intelligence (XAI) and apply them to the context of Hate-Speech-Classification. It serves as a case study example to discover further use cases. This page gives a brief introduction to the prototype. More Details can be found on the About page.</p>
+              <p>
+                The goal of this project is to explore different methods of the research field Explainable
+                Artificial Intelligence (XAI) and apply them to the context of Hate-Speech-Classification. It
+                serves as a case study example to discover further use cases. This page gives a brief
+                introduction to the prototype. More Details can be found on the About page.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="container" id="instruction">
+      <div
+        class="container"
+        id="instruction">
         <h2>How it works</h2>
-          <div class="row">
-            <div class="col" id="instruction-steps">
-              <div class="row row-eq-height" id="step-one" style="border-bottom: 1px solid lightgrey;">
-                <div class="col-sm-2 text-center">
-                  <h3>Step 1:</h3>
-                </div>
-                <div class="col-sm-5">
-                  <h5>Enter a given text in the Text Input card and choose the text language. The prototype can classify english and german text.</h5>
-                </div>
-                <div class="col-sm-5">
-                  <img src="./ressources/images/step_one.png" alt="step one">
-                </div>
-              </div>               
-              <div class="row row-eq-height" id="step_two" style="border-bottom: 1px solid lightgrey;">
-                <div class="col-sm-2 text-center">
-                  <h3>Step 2:</h3>
-                </div>
-                <div class="col-sm-5">
-                  <h5>When clicking on classify the prototype returns a Hate-Speech-Prediction and a respective Prediction-Score to the text you entered in the input card.</h5>
-                </div>
-                <div class="col-sm-5">
-                  <img src="./ressources/images/step_two.png" alt="step two">
-                </div>
+        <div class="row">
+          <div
+            class="col"
+            id="instruction-steps">
+            <div
+              class="row row-eq-height"
+              id="step-one"
+              style="border-bottom: 1px solid lightgrey">
+              <div class="col-sm-2 text-center">
+                <h3>Step 1:</h3>
               </div>
-              <div class="row row-eq-height" id="step_three">
-                <div class="col-sm-2 text-center">
-                  <h3>Step 3:</h3>
-                </div>
-                <div class="col-sm-5">
-                  <h5>Below the text input card and the classification card the prototype ranks cards with similar Text from the its trainig dataset HASOC (2019) with their respective Cosine-Similarity to the input text. The card contains also a Prediction-Score and two small badges which show the given label from the dataset and the predicted label calculated by the neural network.</h5>
-                </div>
-                <div class="col-sm-5">
-                  <img src="./ressources/images/step_three.png" alt="step three">
-                </div>
+              <div class="col-sm-5">
+                <h5>
+                  Enter a given text in the Text Input card and choose the text language. The prototype can
+                  classify english and german text.
+                </h5>
+              </div>
+              <div class="col-sm-5">
+                <img
+                  src="./ressources/images/step_one.png"
+                  alt="step one" />
+              </div>
+            </div>
+            <div
+              class="row row-eq-height"
+              id="step_two"
+              style="border-bottom: 1px solid lightgrey">
+              <div class="col-sm-2 text-center">
+                <h3>Step 2:</h3>
+              </div>
+              <div class="col-sm-5">
+                <h5>
+                  When clicking on classify the prototype returns a Hate-Speech-Prediction and a respective
+                  Prediction-Score to the text you entered in the input card.
+                </h5>
+              </div>
+              <div class="col-sm-5">
+                <img
+                  src="./ressources/images/step_two.png"
+                  alt="step two" />
+              </div>
+            </div>
+            <div
+              class="row row-eq-height"
+              id="step_three">
+              <div class="col-sm-2 text-center">
+                <h3>Step 3:</h3>
+              </div>
+              <div class="col-sm-5">
+                <h5>
+                  Below the text input card and the classification card the prototype ranks cards with similar
+                  Text from the its trainig dataset HASOC (2019) with their respective Cosine-Similarity to
+                  the input text. The card contains also a Prediction-Score and two small badges which show
+                  the given label from the dataset and the predicted label calculated by the neural network.
+                </h5>
+              </div>
+              <div class="col-sm-5">
+                <img
+                  src="./ressources/images/step_three.png"
+                  alt="step three" />
               </div>
             </div>
           </div>
         </div>
-        <div class="container" id="start-here">
-          <div class="row text-center" style="padding: 3rem 0;">
-            <div class="col">
-              <a href="/classifier/src/index.html" class="btn-lg btn-primary" style="text-decoration: none;">Go to Classifier!</a>
-            </div>
+      </div>
+      <div
+        class="container"
+        id="start-here">
+        <div
+          class="row text-center"
+          style="padding: 3rem 0">
+          <div class="col">
+            <a
+              href="../classifier/src/index.html"
+              class="btn-lg btn-primary"
+              style="text-decoration: none"
+              >Go to Classifier!</a
+            >
           </div>
         </div>
+      </div>
     </main>
     <!--Footer Section-->
-    <footer class="bg-light" style="padding: 1rem 2rem; background-color: #f8f8f8; text-align: center;">
-      <p style="margin: 0;">&copy; 2023 by Sebastian Saal. All rights reserved.</p>
-    </footer> 
+    <footer
+      class="bg-light"
+      style="padding: 1rem 2rem; background-color: #f8f8f8; text-align: center">
+      <p style="margin: 0">&copy; 2023 by Sebastian Saal. All rights reserved.</p>
+    </footer>
   </body>
 </html>
