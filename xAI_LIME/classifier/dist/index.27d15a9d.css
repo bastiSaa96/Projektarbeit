@@ -13,6 +13,12 @@ body {
   display: flex;
 }
 
+#results {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
 #explanations {
   padding-top: 50px;
 }
