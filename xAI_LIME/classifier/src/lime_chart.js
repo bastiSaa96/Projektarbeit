@@ -1,6 +1,6 @@
-import Chart, { Ticks } from 'chart.js/auto'
+import Chart from 'chart.js/auto'
 
-(async function() {
+
 
   const data = [
     { feature: 'Trump', negative: -2.45 },
@@ -40,9 +40,6 @@ import Chart, { Ticks } from 'chart.js/auto'
           x: {
             grid: {
               display: false
-            },
-            ticks: {
-              display: false
             }
           },
           y: {
@@ -54,5 +51,3 @@ import Chart, { Ticks } from 'chart.js/auto'
       },
     }
   );
-
-})();

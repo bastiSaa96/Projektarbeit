@@ -1,17 +1,23 @@
-// Define the data
-var players = ["Trump", "sucks", "is", "he", "asshole", "great"];
-var values = [-0.234, -0.356, -0.243, 0.134, -0.548, 0.176];
+// Define the data as an array of objects
+const data = [
+  { feature: "Trump", value: -0.234 },
+  { feature: "sucks", value: -0.356 },
+  { feature: "is", value: -0.243 },
+  { feature: "he", value: 0.134 },
+  { feature: "asshole", value: -0.548 },
+  { feature: "great", value: 0.176 },
+];
 
-// Calculate the Shapley values
-var shapleyValues = values.sort((a, b) => a - b);
+// Sort the data array by absolute value of values
+const sortedData = data.sort((a, b) => a.value - b.value);
 
 // Define the chart element
-var chart = d3.select("#chart");
+const chart = d3.select("#chart");
 
 // Define the group elements
-var groups = chart
+const groups = chart
   .selectAll(".group")
-  .data(shapleyValues)
+  .data(sortedData)
   .enter()
   .append("div")
   .attr("class", "group")
@@ -20,14 +26,16 @@ var groups = chart
   .style("justify-content", "center");
 
 // Define the bar elements
-var bars = groups
+const bars = groups
   .append("div")
   .attr("class", "bar")
   .style("width", function (d) {
-    return Math.abs(d) * 500 + "px";
+    return Math.abs(d.value) * 500 + "px";
   })
   .style("height", "35px")
-  .style("background-color", d => (d > 0 ? "rgba(70, 130, 180, 0.7" : "rgba(255, 0, 0, 0.7)"))
+  .style("background-color", function (d) {
+    return d.value > 0 ? "rgba(70, 130, 180, 0.7" : "rgba(255, 0, 0, 0.7)";
+  })
   .style("display", "flex")
   .style("justify-content", "center")
   .style("align-items", "center");
@@ -37,20 +45,20 @@ bars
   .append("div")
   .attr("class", "value")
   .text(function (d) {
-    return d.toFixed(3);
+    return d.value.toFixed(3);
   });
 
 // Define the label elements
-var labels = groups
+const labels = groups
   .append("div")
   .attr("class", "label")
-  .text(function (d, i) {
-    return players[i];
+  .text(function (d) {
+    return d.feature;
   })
   .style("left", "-5%")
   .style("padding", "0")
   .style("margin-left", function (d) {
-    return Math.abs(d) * 200 + "px";
+    return Math.abs(d.value) * 200 + "px";
   })
   .style("margin-top", "1rem");
 
@@ -58,57 +66,13 @@ var labels = groups
 function updateBars() {
   bars
     .style("width", function (d) {
-      return Math.abs(d) * 200 + "px";
+      return Math.abs(d.value) * 200 + "px";
     })
     .style("background-color", function (d) {
-      return d > 0 ? "green" : "red";
+      return d.value > 0 ? "green" : "red";
     });
   labels.style("margin-left", function (d) {
-    return Math.abs(d) * 200 + "px";
+    return Math.abs(d.value) * 200 + "px";
   });
 }
 
-// Function to calculate the Shapley values
-function calculateShapleyValues(values) {
-  var n = values.length;
-  var shapleyValues = new Array(n);
-
-  for (var i = 0; i < n; i++) {
-    var numerator = 0;
-    var denominator = factorial(n - 1);
-    for (var j = 0; j < 1 << (n - 1); j++) {
-      var coalition = [];
-      for (var k = 0; k < n - 1; k++) {
-        if ((j & (1 << k)) !== 0) {
-          coalition.push(k);
-        }
-      }
-      coalition.push(i);
-      coalition.sort();
-      var m = coalition.length;
-      var contribution = values[coalition[m - 1]] - (m > 1 ? values[coalition[m - 2]] : 0);
-      numerator += contribution * binomial(n - 1, m - 1);
-    }
-    shapleyValues[i] = numerator / denominator;
-  }
-
-  return shapleyValues;
-}
-
-// Function to calculate the binomial coefficient
-function binomial(n, k) {
-  var result = 1;
-  for (var i = 0; i < k; i++) {
-    result *= (n - i) / (i + 1);
-  }
-  return result;
-}
-
-// Function to calculate the factorial of a number
-function factorial(n) {
-  var result = 1;
-  for (var i = 2; i <= n; i++) {
-    result *= i;
-  }
-  return result;
-}

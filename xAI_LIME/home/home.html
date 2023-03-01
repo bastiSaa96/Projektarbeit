@@ -25,7 +25,7 @@
                 </div>
                 <ul class="nav navbar-nav">
                   <li class="active"><a href="#"><i class="fa-regular fa-house"></i> Home</a></li>
-                  <li><a href="/classifier/src/index.html"><i class="fa-solid fa-magnifying-glass"></i> Classification</a></li>
+                  <li><a href="../classifier/src/index.html"><i class="fa-solid fa-magnifying-glass"></i> Classification</a></li>
                   <li><a href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
                   <li><a href="#"><i class="fa-solid fa-circle-question"></i> Help</a></li>
                 </ul>
@@ -64,7 +64,7 @@
                   <h5>Enter a given text in the Text Input card and choose the text language. The prototype can classify english and german text.</h5>
                 </div>
                 <div class="col-sm-5">
-                  <img src="./ressources/images/step_one.png" alt="step one">
+                  <img id="guide" src="./ressources/images/step_one.png" alt="step one">
                 </div>
               </div>               
               <div class="row row-eq-height" id="step_two" style="border-bottom: 1px solid lightgrey;">
@@ -75,7 +75,7 @@
                   <h5>When clicking on classify the prototype returns a Hate-Speech-Prediction and a respective Prediction-Score to the text you entered in the input card.</h5>
                 </div>
                 <div class="col-sm-5">
-                  <img src="./ressources/images/step_two.png" alt="step two">
+                  <img id="guide" src="./ressources/images/step_two.png" alt="step two">
                 </div>
               </div>
               <div class="row row-eq-height" id="step_three">
@@ -86,7 +86,18 @@
                   <h5>Below the text input card and the classification card the prototype ranks cards with similar Text from the its trainig dataset HASOC (2019) with their respective Cosine-Similarity to the input text. The card contains also a Prediction-Score and two small badges which show the given label from the dataset and the predicted label calculated by the neural network.</h5>
                 </div>
                 <div class="col-sm-5">
-                  <img src="./ressources/images/step_three.png" alt="step three">
+                  <img id="guide" src="./ressources/images/step_three.png" alt="step three">
+                </div>
+              </div>
+              <div class="row row-eq-height" id="step_four">
+                <div class="col-sm-2 text-center">
+                  <h3>Step 4:</h3>
+                </div>
+                <div class="col-sm-5">
+                  <h5>The System also provides a local Explanation which is shown as a diagram. The local XAI Method shows the impact of specific features to the output of the system.</h5>
+                </div>
+                <div class="col-sm-5">
+                  <img id="guide" src="./ressources/images/step_four.png" alt="step three">
                 </div>
               </div>
             </div>
