@@ -558,9 +558,9 @@ function hmrAccept(bundle, id) {
 
 },{}],"3ZH51":[function(require,module,exports) {
 async function getData() {
-    const response = await fetch("./similarTweets.json");
-    const { data  } = await response.json();
-    return data;
+    const response = await fetch("https://projektarbeit-59dcb-default-rtdb.europe-west1.firebasedatabase.app/data.json");
+    console.log(response);
+    return await response.json();
 }
 async function createTweetCards() {
     const tweets = await getData();
