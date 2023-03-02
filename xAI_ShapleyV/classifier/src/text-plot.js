@@ -62,17 +62,4 @@ const labels = groups
   })
   .style("margin-top", "1rem");
 
-// Erstellen der Tick-Funktion zur Aktualisierung der Balkenbreiten und der Label-Positionen
-function updateBars() {
-  bars
-    .style("width", function (d) {
-      return Math.abs(d.value) * 200 + "px";
-    })
-    .style("background-color", function (d) {
-      return d.value > 0 ? "green" : "red";
-    });
-  labels.style("margin-left", function (d) {
-    return Math.abs(d.value) * 200 + "px";
-  });
-}
 
