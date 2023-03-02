@@ -1,7 +1,7 @@
 import Chart from 'chart.js/auto'
 
 
-
+// Erstellen des Objekt Arrays mit den Daten
   const data = [
     { feature: 'Trump', negative: -2.45 },
     { feature: 'is', weight: 0.21 },
@@ -11,12 +11,14 @@ import Chart from 'chart.js/auto'
     { feature: 'balls', weight: 4.05 },
   ]
 
+// Erstellen des Diagramms
   new Chart(
     document.getElementById('lime_chart'),
     {
       type: 'bar',
       data: {
         labels: data.map(row => row.feature),
+        // Die Datensätze aus dem Objekt Array in postive und negative Werte unterteilen
         datasets: [
           {
             label: 'negative',
@@ -34,6 +36,7 @@ import Chart from 'chart.js/auto'
           }
         ]
       },
+      //Optionen der Darstellung des Diagramms bestimmen, sodass ein horizontales Balkendiagramm entsteht
       options: {
         indexAxis: 'y',
         scales: {

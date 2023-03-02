@@ -560,6 +560,7 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _auto = require("chart.js/auto");
 var _autoDefault = parcelHelpers.interopDefault(_auto);
+// Erstellen des Objekt Arrays mit den Daten
 const data = [
     {
         feature: "Trump",
@@ -586,10 +587,12 @@ const data = [
         weight: 4.05
     }
 ];
+// Erstellen des Diagramms
 new (0, _autoDefault.default)(document.getElementById("lime_chart"), {
     type: "bar",
     data: {
         labels: data.map((row)=>row.feature),
+        // Die Datensätze aus dem Objekt Array in postive und negative Werte unterteilen
         datasets: [
             {
                 label: "negative",
@@ -607,6 +610,7 @@ new (0, _autoDefault.default)(document.getElementById("lime_chart"), {
             }
         ]
     },
+    //Optionen der Darstellung des Diagramms bestimmen, sodass ein horizontales Balkendiagramm entsteht
     options: {
         indexAxis: "y",
         scales: {

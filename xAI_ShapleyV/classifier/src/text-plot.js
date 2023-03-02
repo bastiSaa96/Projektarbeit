@@ -1,4 +1,4 @@
-// Define the data as an array of objects
+// Daten als ein Objekt Array definieren
 const data = [
   { feature: "Trump", value: -0.234 },
   { feature: "sucks", value: -0.356 },
@@ -8,13 +8,13 @@ const data = [
   { feature: "great", value: 0.176 },
 ];
 
-// Sort the data array by absolute value of values
+// Die Werte aus dem Array der Größe nach ordnen
 const sortedData = data.sort((a, b) => a.value - b.value);
 
-// Define the chart element
+// Das Diagramm-Element mit der ID=Chart definieren
 const chart = d3.select("#chart");
 
-// Define the group elements
+// Die Gruppen des Diagramms definieren
 const groups = chart
   .selectAll(".group")
   .data(sortedData)
@@ -25,7 +25,7 @@ const groups = chart
   .style("flex-direction", "column")
   .style("justify-content", "center");
 
-// Define the bar elements
+// Definieren der dargestellten Balken
 const bars = groups
   .append("div")
   .attr("class", "bar")
@@ -40,7 +40,7 @@ const bars = groups
   .style("justify-content", "center")
   .style("align-items", "center");
 
-// Add a value element to each bar
+// die Werte den Balken im Diagramm hinzufügen
 bars
   .append("div")
   .attr("class", "value")
@@ -48,7 +48,7 @@ bars
     return d.value.toFixed(3);
   });
 
-// Define the label elements
+// Erstellen der labels (features) zu den Werten
 const labels = groups
   .append("div")
   .attr("class", "label")
@@ -62,7 +62,7 @@ const labels = groups
   })
   .style("margin-top", "1rem");
 
-// Define the tick function to update bar widths and label positions
+// Erstellen der Tick-Funktion zur Aktualisierung der Balkenbreiten und der Label-Positionen
 function updateBars() {
   bars
     .style("width", function (d) {

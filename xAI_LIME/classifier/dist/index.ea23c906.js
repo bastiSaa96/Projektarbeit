@@ -557,15 +557,18 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"3ZH51":[function(require,module,exports) {
+// Funktion um die Daten aus der Datenbank in Firebase zu laden
 async function getData() {
     const response = await fetch("https://projektarbeit-59dcb-default-rtdb.europe-west1.firebasedatabase.app/data.json");
     console.log(response);
     return await response.json();
 }
+// Funktion um die Bootstrap Cards zu erstellen, in denen die Daten dargestellt werden
 async function createTweetCards() {
     const tweets = await getData();
     const divContainer = document.getElementById("similar-tweets-lime");
     console.log(tweets);
+    // Für jeden Tweet wird ein div Element mit der Klasse card erstellt
     tweets.forEach((tweet)=>{
         const container = document.createElement("div");
         container.classList.add("similar-tweet");
@@ -591,6 +594,7 @@ async function createTweetCards() {
         const predictionValue = tweet.prediction_score * 100;
         predictionHeading.textContent = "Prediction-Score:";
         predictionValueElement.textContent = predictionValue.toFixed(2) + " %";
+        // Erstellen der Hate Speech und No Hate Speech Label
         const label = document.createElement("div");
         if (tweet.task_1 === "HOF") {
             label.textContent = "Hate Speech";
@@ -613,6 +617,7 @@ async function createTweetCards() {
         divContainer.appendChild(container);
     });
 }
+//Aufrufen der Funktion, sodass die Cards erstellt werden
 createTweetCards();
 
 },{}]},["l5Ivz","3ZH51"], "3ZH51", "parcelRequire94c2")
