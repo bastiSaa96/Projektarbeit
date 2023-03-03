@@ -568,7 +568,7 @@ const data = [
     },
     {
         feature: "is",
-        weight: 0.21
+        positive: 0.21
     },
     {
         feature: "asshole",
@@ -576,15 +576,15 @@ const data = [
     },
     {
         feature: "president",
-        weight: 1.00
+        positive: 1.00
     },
     {
         feature: "sucks",
         negative: -5.85
     },
     {
-        feature: "balls",
-        weight: 4.05
+        feature: "great",
+        positive: 4.05
     }
 ];
 // Erstellen des Diagramms
@@ -597,15 +597,15 @@ new (0, _autoDefault.default)(document.getElementById("lime_chart"), {
             {
                 label: "negative",
                 data: data.map((row)=>row.negative),
-                backgroundColor: "rgba(255, 99, 132, 1)",
-                borderColor: "rgba(255, 99, 132, 1)",
+                backgroundColor: "#FF7514",
+                borderColor: "#FF7514",
                 borderWidth: 1
             },
             {
                 label: "positive",
-                data: data.map((row)=>row.weight),
-                backgroundColor: "rgba(38, 194, 1)",
-                borderColor: "rgba(38, 194, 1)",
+                data: data.map((row)=>row.positive),
+                backgroundColor: "#007fff",
+                borderColor: "#007fff",
                 borderWidth: 1
             }
         ]
