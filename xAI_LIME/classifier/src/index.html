@@ -50,22 +50,6 @@
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primary" id="englishBtn">english</button>
                                 <button type="button" class="btn btn-primary" id="germanBtn">german</button>
-                                
-                                <script>
-                                var btns = document.querySelectorAll('.btn-group .btn');
-
-                                for (var i = 0; i < btns.length; i++) {
-                                    btns[i].addEventListener('click', function() {
-                                        var current = document.getElementsByClassName("active");
-                                        // Entferne die Klasse 'active' von allen aktiven Buttons
-                                        for (var j = 0; j < current.length; j++) {
-                                            current[j].className = current[j].className.replace(" active", "");
-                                        }
-                                        // Füge die Klasse 'active' zu dem geklickten Button hinzu
-                                        this.className += " active";
-                                    });
-                                }
-                                </script>
                             </div>
                         </div>
                     </div>
