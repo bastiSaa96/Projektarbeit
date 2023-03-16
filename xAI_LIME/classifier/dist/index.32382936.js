@@ -563,28 +563,32 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
 // Erstellen des Objekt Arrays mit den Daten
 const data = [
     {
-        feature: "Trump",
-        negative: -2.45
+        feature: "fucking",
+        negative: -0.45
     },
     {
-        feature: "is",
-        positive: 0.21
+        feature: "clown",
+        negative: -0.21
     },
     {
-        feature: "asshole",
-        negative: -6.63
+        feature: "ugly",
+        negative: -0.63
     },
     {
-        feature: "president",
-        positive: 1.00
+        feature: "paedo",
+        negative: -0.05
     },
     {
-        feature: "sucks",
-        negative: -5.85
+        feature: "retarded",
+        negative: -0.75
     },
     {
-        feature: "great",
-        positive: 4.05
+        feature: "faggots",
+        negative: -0.05
+    },
+    {
+        feature: "time",
+        positive: 0.1
     }
 ];
 // Erstellen des Diagramms
