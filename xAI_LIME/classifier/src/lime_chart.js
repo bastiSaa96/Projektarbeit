@@ -4,7 +4,7 @@ import Chart from 'chart.js/auto'
 // Erstellen des Objekt Arrays mit den Daten
   const data = [
     { feature: 'fucking', negative: -0.45 },
-    { feature: 'clown', negative: -0.21 },
+    { feature: 'clown', positive: 0.21 },
     { feature: 'ugly', negative: -0.63 },
     { feature: 'paedo', negative: -0.05 },
     { feature: 'retarded', negative: -0.75 },

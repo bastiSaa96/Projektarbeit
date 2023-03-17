@@ -568,7 +568,7 @@ const data = [
     },
     {
         feature: "clown",
-        negative: -0.21
+        positive: 0.21
     },
     {
         feature: "ugly",
