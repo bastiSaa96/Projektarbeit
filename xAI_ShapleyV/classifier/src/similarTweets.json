@@ -2,17 +2,17 @@
     "data": [
         {
             "text_id": "hasoc_en_219",
-            "text": "Today PM @BorisJohnson is in Northern Ireland with Secretary of State for Northern Ireland @JulianSmithUK. They are meeting each of Northern Irelandâ€™s main political parties for discussions on restoring the devolved institutions.",
+            "text": "Sie sind leider etwas sehr naiv. Deutschland hat schon einen sehr großzügigen Sozialstaat und definitiv nicht in der Bringschuld für Leute die Asyl erhalten. Außerdem funktioniert Migration teilweise sogar besser, wenn Migranten nicht alimentiert/hofiert werden müssen siehe USA!",
             "task_1": "NOT",
-            "cos_sim": 0.8445,
-            "prediction_score": 0.0356
+            "cos_sim": 0.7445,
+            "prediction_score": 0.956
         },
         {
-            "text_id": "hasoc_en1_24",
-            "text": "If Kasab was alive today, even he would have claimed that Tukaram Omble forced him to chant Jai Shri Ram, and voila!",
+            "text_id": "hasoc_en_143",
+            "text": "Right. Sozialstaat abbauen für alle illegalen ohne Asyl Status insbesondere Integrationsunwillige und Kriminelle Migranten. Dann braucht es auch keinen Zaun. Kriminelle und arbeitsunwillige haben wir in der Dt. Bevölkerung genug da braucht es keinen Zuwachs von aussen.",
             "task_1": "HOF",
-            "cos_sim": 0.5298,
-            "prediction_score": 0.8905
+            "cos_sim": 0.858,
+            "prediction_score": 0.946
         }
     ]
 }

@@ -3,13 +3,13 @@ import Chart from 'chart.js/auto'
 
 // Erstellen des Objekt Arrays mit den Daten
   const data = [
-    { feature: 'fucking', negative: -0.45 },
-    { feature: 'clown', positive: 0.21 },
-    { feature: 'ugly', negative: -0.63 },
-    { feature: 'paedo', negative: -0.05 },
-    { feature: 'retarded', negative: -0.75 },
-    { feature: 'faggots', negative: -0.05 },
-    { feature: "time", positive: 0.1},
+    { feature: 'criminals', negative: -0.75 },
+    { feature: 'people', positive: 0.51 },
+    { feature: 'illegally', negative: -0.37 },
+    { feature: 'broke', negative: -0.32 },
+    { feature: 'house', positive: 0.27 },
+    { feature: 'country', positive: 0.05 },
+    
   ]
 
 // Erstellen des Diagramms
