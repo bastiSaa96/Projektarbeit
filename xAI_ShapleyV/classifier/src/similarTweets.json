@@ -2,9 +2,9 @@
     "data": [
         {
             "text_id": "hasoc_en_219",
-            "text": "Sie sind leider etwas sehr naiv. Deutschland hat schon einen sehr großzügigen Sozialstaat und definitiv nicht in der Bringschuld für Leute die Asyl erhalten. Außerdem funktioniert Migration teilweise sogar besser, wenn Migranten nicht alimentiert/hofiert werden müssen siehe USA!",
+            "text": "In den kommenden Jahren sollten wir uns zunächst auf die Integration der Migranten konzentrieren, die bereits in unserem Land leben. Dazu gehört auch eine Überprüfung von Asylanträgen, um sicherzustellen, dass sie rechtmäßig sind. Wenn wir die Integration erfolgreich vorantreiben, können wir langfristig einen starken Sozialstaat für alle Bürger schaffen, einschließlich der deutschen Rentner.",
             "task_1": "NOT",
-            "cos_sim": 0.7445,
+            "cos_sim": 0.7945,
             "prediction_score": 0.956
         },
         {
