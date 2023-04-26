@@ -1,15 +1,15 @@
 {
     "data": [
         {
-            "text_id": "hasoc_en_219",
-            "text": "In den kommenden Jahren sollten wir uns zunächst auf die Integration der Migranten konzentrieren, die bereits in unserem Land leben. Dazu gehört auch eine Überprüfung von Asylanträgen, um sicherzustellen, dass sie rechtmäßig sind. Wenn wir die Integration erfolgreich vorantreiben, können wir langfristig einen starken Sozialstaat für alle Bürger schaffen, einschließlich der deutschen Rentner.",
+            "text_id": "hasoc_de_139",
+            "text": "Die Menschen in Russland haben das Recht, in einer Demokratie zu leben, die auf Freiheit und Menschenrechten basiert, und ich hoffe, dass die politischen Verantwortlichen sich für eine friedliche und demokratische Lösung der aktuellen Situation einsetzen werden",
             "task_1": "NOT",
-            "cos_sim": 0.7945,
+            "cos_sim": 0.745,
             "prediction_score": 0.956
         },
         {
-            "text_id": "hasoc_en_143",
-            "text": "Right. Sozialstaat abbauen für alle illegalen ohne Asyl Status insbesondere Integrationsunwillige und Kriminelle Migranten. Dann braucht es auch keinen Zaun. Kriminelle und arbeitsunwillige haben wir in der Dt. Bevölkerung genug da braucht es keinen Zuwachs von aussen.",
+            "text_id": "hasoc_de_442",
+            "text": "Alle russischen Agenten und ihre Helfer sollten an die Zukunft denken. Entweder man baut den Volksaufstand schrittweise auf oder man springt aus dem Fenster. Man kann auch helfen, den Kreml zu stürzen und dabei überleben.",
             "task_1": "HOF",
             "cos_sim": 0.858,
             "prediction_score": 0.946

@@ -1,12 +1,11 @@
 // Daten als ein Objekt Array definieren
 const data = [
-  { feature: "Asybetrüger", value: -0.534 },
-  { feature: "Migranten", value: -0.356 },
-  { feature: "abgeschoben", value: -0.243 },
-  { feature: "werden", value: -0.133 },
-  { feature: "Gesellschaft", value: 0.234 },
-  { feature: "zusammenwachsen", value: 0.295 },
-  { feature: "Sozialstaat", value: 0.176 },
+  {feature: "russischen", value: 0.162},
+  {feature: "Agenten", value: 0.394},
+  {feature: "Volksaufstand", value: -0.472},
+  {feature: "springt aus dem Fenster", value: -0.631},
+  {feature: "Kreml", value: 0.253},
+  {feature: "überleben", value: 0.135}
 ];
 
 // Die Werte aus dem Array der Größe nach ordnen
